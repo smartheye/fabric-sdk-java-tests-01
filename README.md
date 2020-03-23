@@ -1,1 +1,4 @@
-# fabric-sdk-java-tests-01
+# Test case for reproduction of FABJ-515
+
+JIRA: https://jira.hyperledger.org/browse/FABJ-515
+
