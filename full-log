@@ -1,0 +1,1108 @@
+11:56:53.885 [main] DEBUG org.hyperledger.fabric.sdk.helper.Config - Loading configuration from /Users/heye/dev/github.ibm.com/heyehy/fabric-tests/config.properties and it is present: false
+11:56:53.891 [main] WARN org.hyperledger.fabric.sdk.helper.Config - Failed to load any configuration from: config.properties. Using toolkit defaults
+false
+before testcase
+11:56:54.453 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+11:56:54.454 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+11:56:54.455 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+11:56:54.456 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+11:56:54.457 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+11:56:54.459 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+11:56:54.460 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+11:56:54.461 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+11:56:54.462 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+11:56:54.463 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+11:56:54.463 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+11:56:54.463 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+11:56:54.463 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/cf/vccgk90d7cb0_b606pts4ls40000gn/T (java.io.tmpdir)
+11:56:54.463 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+11:56:54.465 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+11:56:54.465 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+11:56:54.466 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+11:56:54.466 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+11:56:54.727 [main] DEBUG org.hyperledger.fabric.sdk.security.CryptoPrimitives - Mapped curve strength 256 to secp256r1
+11:56:54.791 [main] DEBUG org.hyperledger.fabric.sdk.security.CryptoPrimitives - Mapped curve strength 256 to secp256r1
+11:56:54.803 [main] DEBUG org.hyperledger.fabric.sdk.HFClient - Setting user context to MSPID: Org1MSP user: gateway
+11:56:54.828 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Creating channel: mychannel, client context gateway
+11:56:54.854 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Created Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: null, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:56:54.876 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel{id: 1, name: mychannel} adding peer: Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: null, url: grpcs://localhost:7051, mspid: Org1MSP}, peerOptions: PeerOptions( newest: true, startEvents: null, stopEvents: 9223372036854775807, registerEventsForFilteredBlocks: false, PeerRoles:[endorsingPeer ,chaincodeQuery ,ledgerQuery ,eventSource ,serviceDiscovery])
+11:56:54.876 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: null, url: grpcs://localhost:7051, mspid: Org1MSP} setting channel to Channel{id: 1, name: mychannel}, from null
+11:56:54.877 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel mapping peer Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} to mspid Org1MSP
+11:56:55.288 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/cf/vccgk90d7cb0_b606pts4ls40000gn/T (io.netty.tmpdir)
+11:56:55.288 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+11:56:55.288 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+11:56:55.292 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - Unable to load the library 'netty_tcnative_osx_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+    at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1871)
+    at java.lang.Runtime.loadLibrary0(Runtime.java:871)
+    at java.lang.System.loadLibrary(System.java:1124)
+    at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+    at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+    at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+    at io.netty.util.internal.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:96)
+    at io.netty.handler.ssl.OpenSsl.loadTcNative(OpenSsl.java:581)
+    at io.netty.handler.ssl.OpenSsl.<clinit>(OpenSsl.java:133)
+    at io.grpc.netty.GrpcSslContexts.configure(GrpcSslContexts.java:194)
+    at org.hyperledger.fabric.sdk.Endpoint.getSslContextBuilder(Endpoint.java:294)
+    at org.hyperledger.fabric.sdk.Endpoint.<init>(Endpoint.java:254)
+    at org.hyperledger.fabric.sdk.Endpoint.createEndpoint(Endpoint.java:487)
+    at org.hyperledger.fabric.sdk.Peer.setTLSCertificateKeyPair(Peer.java:465)
+    at org.hyperledger.fabric.sdk.Channel.addPeer(Channel.java:680)
+    at org.hyperledger.fabric.sdk.NetworkConfig.reconstructChannel(NetworkConfig.java:722)
+    at org.hyperledger.fabric.sdk.NetworkConfig.loadChannel(NetworkConfig.java:499)
+    at org.hyperledger.fabric.sdk.HFClient.loadChannelFromConfig(HFClient.java:161)
+    at org.hyperledger.fabric.gateway.impl.GatewayImpl.getNetwork(GatewayImpl.java:261)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:66)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+11:56:55.301 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - netty_tcnative_osx_x86_64 cannot be loaded from java.library.path, now trying export to -Dio.netty.native.workdir: /var/folders/cf/vccgk90d7cb0_b606pts4ls40000gn/T
+java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+    at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1871)
+    at java.lang.Runtime.loadLibrary0(Runtime.java:871)
+    at java.lang.System.loadLibrary(System.java:1124)
+    at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+    at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:349)
+    at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:136)
+    at io.netty.util.internal.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:96)
+    at io.netty.handler.ssl.OpenSsl.loadTcNative(OpenSsl.java:581)
+    at io.netty.handler.ssl.OpenSsl.<clinit>(OpenSsl.java:133)
+    at io.grpc.netty.GrpcSslContexts.configure(GrpcSslContexts.java:194)
+    at org.hyperledger.fabric.sdk.Endpoint.getSslContextBuilder(Endpoint.java:294)
+    at org.hyperledger.fabric.sdk.Endpoint.<init>(Endpoint.java:254)
+    at org.hyperledger.fabric.sdk.Endpoint.createEndpoint(Endpoint.java:487)
+    at org.hyperledger.fabric.sdk.Peer.setTLSCertificateKeyPair(Peer.java:465)
+    at org.hyperledger.fabric.sdk.Channel.addPeer(Channel.java:680)
+    at org.hyperledger.fabric.sdk.NetworkConfig.reconstructChannel(NetworkConfig.java:722)
+    at org.hyperledger.fabric.sdk.NetworkConfig.loadChannel(NetworkConfig.java:499)
+    at org.hyperledger.fabric.sdk.HFClient.loadChannelFromConfig(HFClient.java:161)
+    at org.hyperledger.fabric.gateway.impl.GatewayImpl.getNetwork(GatewayImpl.java:261)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:66)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+    Suppressed: java.lang.UnsatisfiedLinkError: no netty_tcnative_osx_x86_64 in java.library.path
+        at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1871)
+        at java.lang.Runtime.loadLibrary0(Runtime.java:871)
+        at java.lang.System.loadLibrary(System.java:1124)
+        at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:369)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:361)
+        at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:339)
+        ... 81 common frames omitted
+11:56:56.190 [main] DEBUG io.netty.util.internal.NativeLibraryLoader - Successfully loaded the library /var/folders/cf/vccgk90d7cb0_b606pts4ls40000gn/T/libnetty_tcnative_osx_x86_644627105064028918859.dylib
+11:56:56.190 [main] DEBUG io.netty.handler.ssl.OpenSsl - Initialize netty-tcnative using engine: 'default'
+11:56:56.191 [main] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative using native library: BoringSSL
+11:56:56.226 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+11:56:56.226 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+11:56:56.235 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+11:56:56.235 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+11:56:56.236 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6cdba6dc
+11:56:56.271 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+11:56:56.271 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+11:56:56.276 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+11:56:56.276 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+11:56:56.276 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+11:56:56.276 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+11:56:56.276 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+11:56:56.276 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+11:56:56.277 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+11:56:56.294 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+11:56:56.295 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+11:56:56.295 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+11:56:56.304 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@48793bef
+11:56:56.319 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+11:56:56.319 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+11:56:56.319 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+11:56:56.319 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+11:56:56.416 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+11:56:56.416 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+11:56:56.419 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+11:56:56.420 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+11:56:56.420 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+11:56:56.422 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+11:56:56.423 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+11:56:56.423 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+11:56:56.424 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+11:56:56.424 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+11:56:56.424 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+11:56:56.424 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+11:56:56.425 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+11:56:56.425 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+11:56:56.425 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+11:56:56.425 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+11:56:56.425 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+11:56:56.426 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+11:56:56.428 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+11:56:56.428 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+11:56:56.429 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+11:56:56.430 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+11:56:56.431 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+11:56:56.431 [main] DEBUG io.netty.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+11:56:56.431 [main] DEBUG io.netty.handler.ssl.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2, TLSv1.3] 
+11:56:56.431 [main] DEBUG io.netty.handler.ssl.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+11:56:56.466 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2421cc4
+11:56:56.815 [main] DEBUG org.hyperledger.fabric.sdk.Endpoint - Endpoint grpcs://localhost:7051, using CN overrideAuthority: 'peer0.org1.example.com'
+11:56:56.965 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+11:56:57.085 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+11:56:57.085 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+11:56:57.110 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+11:56:57.354 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel initialize shutdown false
+11:56:57.360 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel loadCACertificates
+11:56:57.514 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: ENDORSER_TRANSACTION, version: 1, Txid: a00427ad6a1d61443dbce30a750b3dd69269c9e730caf1f873cebf8c6f12cbf7, channelId: mychannel, epoch 0, clientTLSCertificate digest: 
+11:56:57.535 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProposalBuilder - ChaincodeInvocationSpec type: GOLANG, chaincode name: cscc, chaincode path: , chaincode version:  args("GetConfigBlock", "mychannel")
+11:56:57.682 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils -  User: gateway Certificate: 2d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b44434341632b6741774942416749515a5131386a72526c485a4b5a726c75794e557936747a414b42676771686b6a4f50515144416a427a4d5173770a435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e5532467549455a790a5957356a61584e6a627a455a4d4263474131554543684d5162334a6e4d53356c654746746347786c4c6d4e76625445634d426f474131554541784d54593245750a62334a6e4d53356c654746746347786c4c6d4e7662544165467730794d44417a4d5451774e7a49334d4442614677307a4d44417a4d5449774e7a49334d4442610a4d477378437a414a42674e5642415954416c56544d524d77455159445651514945777044595778705a6d3979626d6c684d5259774641594456515148457731540a59573467526e4a68626d4e7063324e764d513477444159445651514c457756685a473170626a45664d4230474131554541777757515752746157354162334a6e0a4d53356c654746746347786c4c6d4e766254425a4d424d4742797147534d34394167454743437147534d34394177454841304941424c68744a2b367a744556540a6b484b42594c537a353350657162447473414f6d6859764766774e50625a7a5849662f61796876374b74687a49364633685659316654484b51686937696363690a5a346265356d53366b56796a5454424c4d41344741315564447745422f775145417749486744414d42674e5648524d4241663845416a41414d437347413155640a4977516b4d434b41494356713452516765676948376c517150594731466f43683864502b48433938476b347271716b61694a424c4d416f4743437147534d34390a42414d43413063414d45514349465a7a476f346d66564c535761676642465455695a6c516632394e444866776666596f4b336936747852324169413442726c5a0a4a4a634f4c677237447172473338545331394f43524b7545686a3477336f76333048367a62413d3d0a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a
+11:56:57.685 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - SignatureHeader: nonce: 8cbba5a0eb16da8b00b231288a649e9412a85b50786161b7, User:gateway, MSPID: Org1MSP, idBytes: 0777a6e53490f53a2e510e4e1facae37bd9ee1efc412883585b1dab050ac89f1
+11:56:57.699 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Getting signed proposal.
+11:56:58.364 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Got signed proposal.
+11:56:58.371 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel send proposal to Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}, txID: a00427ad6a1d61443dbce30a750b3dd69269c9e730caf1f873cebf8c6f12cbf7
+11:56:58.372 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendProposalAsync Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:56:58.747 [grpc-default-executor-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 1609 (auto-detected)
+11:56:58.751 [grpc-default-executor-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+11:56:58.751 [grpc-default-executor-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+11:56:58.754 [grpc-default-executor-0] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+11:56:58.755 [grpc-default-executor-0] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+11:56:58.769 [grpc-default-executor-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+11:56:58.851 [grpc-nio-worker-ELG-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@208ffdd9
+11:56:59.079 [grpc-nio-worker-ELG-1-2] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+11:56:59.098 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+11:56:59.102 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+11:56:59.110 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND SETTINGS: ack=false settings=[id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051]
+11:56:59.112 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND SETTINGS: ack=true
+11:56:59.117 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND SETTINGS: ack=true
+11:56:59.156 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: peer0.org1.example.com, :path: /protos.Endorser/ProcessProposal, :method: POST, :scheme: https, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.23.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+11:56:59.170 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=1089 bytes=000000043c0af1070ac1070a69080310011a0c0889e7e0f3051080ee9df20122096d796368616e6e656c2a406130303432376164366131643631343433646263...
+11:56:59.184 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=1089
+11:56:59.206 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND PING: ack=false bytes=145258749040133895
+11:56:59.206 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND PING: ack=true bytes=145258749040133895
+11:56:59.215 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc] padding=0 endStream=false
+11:56:59.222 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=3 padding=0 endStream=false length=16384 bytes=000000ac89080122e3a80108c8011adca8010a4608021220cd284d2c1c645a88d0d50fe102cb8ab33ff6547e161c194555613d24476d78cf1a20fc27556b1f0e...
+11:56:59.237 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=3 padding=0 endStream=false length=16384 bytes=0a617a414f42674e56485138424166384542414d4341615977485159445652306c42425977464159494b7759424251554841774947434373474151554642774d...
+11:56:59.238 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=3 padding=0 endStream=false length=11406 bytes=497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a41554267...
+11:56:59.241 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0, grpc-message: ] padding=0 endStream=true
+11:56:59.252 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel, transaction: a00427ad6a1d61443dbce30a750b3dd69269c9e730caf1f873cebf8c6f12cbf7 got back from peer Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} status: 200, message: 
+11:56:59.265 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel Got config block getting MSP data and anchorPeers data
+11:56:59.334 [main] DEBUG org.hyperledger.fabric.sdk.Channel - loading certificates for MSP : Org2MSP
+11:56:59.338 [main] DEBUG org.hyperledger.fabric.sdk.Channel - loading certificates for MSP : Org1MSP
+11:56:59.342 [main] DEBUG org.hyperledger.fabric.sdk.Channel - loading certificates for MSP : OrdererMSP
+11:56:59.345 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel loadCACertificates completed 
+11:56:59.347 [main] INFO org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel doing discovery with peer: Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:56:59.386 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendDiscoveryRequstAsync Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:56:59.401 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: peer0.org1.example.com, :path: /discovery.Discovery/Discover, :method: POST, :scheme: https, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.23.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+11:56:59.402 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=972 bytes=00000003c70afc060adb060ab6060a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b4443434163...
+11:56:59.416 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=972
+11:56:59.416 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND PING: ack=false bytes=145258749040133895
+11:56:59.416 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND PING: ack=true bytes=145258749040133895
+11:56:59.417 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc] padding=0 endStream=false
+11:56:59.418 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=5 padding=0 endStream=false length=16384 bytes=0000004fe90aa47b12a17b0a9e280a0a4f7264657265724d5350128f280a0a4f7264657265724d535012c7062d2d2d2d2d424547494e20434552544946494341...
+11:56:59.418 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=5 padding=0 endStream=false length=4078 bytes=7a49334d4442610a4d476f78437a414a42674e5642415954416c56544d524d77455159445651514945777044595778705a6d3979626d6c684d52597746415944...
+11:56:59.418 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[grpc-status: 0, grpc-message: ] padding=0 endStream=true
+11:56:59.516 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: OrdererMSP
+11:56:59.518 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org1MSP
+11:56:59.590 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org1MSP
+11:56:59.590 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org2MSP
+11:56:59.590 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org2MSP
+11:56:59.591 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel service discovery completed: true
+11:56:59.594 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel doing discovery for chaincodes: [ServiceDiscoveryChaincodeCalls(name: mycc)]
+11:56:59.595 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel doing discovery for chaincodes on peer: Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:56:59.717 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel peer Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} sending chaincode query request
+11:56:59.717 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendDiscoveryRequstAsync Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:56:59.718 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND HEADERS: streamId=7 headers=GrpcHttp2OutboundHeaders[:authority: peer0.org1.example.com, :path: /discovery.Discovery/Discover, :method: POST, :scheme: https, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.23.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+11:56:59.718 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND DATA: streamId=7 padding=0 endStream=true length=968 bytes=00000003c30af7060adb060ab6060a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b4443434163...
+11:56:59.746 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=968
+11:56:59.746 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND PING: ack=false bytes=145258749040133895
+11:56:59.746 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND PING: ack=true bytes=145258749040133895
+11:56:59.753 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=7 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc] padding=0 endStream=false
+11:56:59.753 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=7 padding=0 endStream=false length=4695 bytes=00000012520acf241acc240ac9240a046d79636312bd120a02473112b6120a97090ab9010a6f18057a6b121408e8d8b3b0bff1a8ff1510b8939099a0a9b4ff15...
+11:56:59.754 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=7 headers=GrpcHttp2ResponseHeaders[grpc-status: 0, grpc-message: ] padding=0 endStream=true
+11:56:59.763 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel peer Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} completed chaincode query request
+11:56:59.766 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel found 1 layouts for chaincode: mycc, layouts: [SDLayout: {groups: [SDGroup: { name: G0, required: 1, endorsers: [SDEndorser-Org1MSP-peer1.org1.example.com:8051, SDEndorser-Org1MSP-peer0.org1.example.com:7051]}, SDGroup: { name: G1, required: 1, endorsers: [SDEndorser-Org2MSP-peer0.org2.example.com:9051, SDEndorser-Org2MSP-peer1.org2.example.com:10051]}]}]
+11:56:59.766 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel doing channel update for service discovery.
+11:56:59.768 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel doing channel update adding new orderer mspid: OrdererMSP, endpoint: orderer.example.com:7050
+11:56:59.771 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel Channel{id: 1, name: mychannel} adding Orderer{id: 4, channelName: , name:orderer.example.com:7050, url: grpcs://orderer.example.com:7050, mspid: OrdererMSP}
+11:56:59.771 [main] DEBUG org.hyperledger.fabric.sdk.Orderer - Orderer{id: 4, channelName: , name:orderer.example.com:7050, url: grpcs://orderer.example.com:7050, mspid: OrdererMSP} setting channel Channel{id: 1, name: mychannel}
+11:56:59.772 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel doing channel update found new peer mspid: Org1MSP, endpoint: peer0.org1.example.com:7051
+11:56:59.775 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Created Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: null, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP}
+11:56:59.775 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel{id: 1, name: mychannel} adding peer: Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: null, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP}, peerOptions: PeerOptions( newest: true, startEvents: null, stopEvents: 9223372036854775807, registerEventsForFilteredBlocks: false, PeerRoles:[endorsingPeer ,chaincodeQuery ,ledgerQuery ,eventSource ,serviceDiscovery])
+11:56:59.775 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: null, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} setting channel to Channel{id: 1, name: mychannel}, from null
+11:56:59.775 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel mapping peer Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} to mspid Org1MSP
+11:56:59.895 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel doing channel update found new peer mspid: Org2MSP, endpoint: peer0.org2.example.com:9051
+11:56:59.896 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Created Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: null, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP}
+11:56:59.898 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel{id: 1, name: mychannel} adding peer: Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: null, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP}, peerOptions: PeerOptions( newest: true, startEvents: null, stopEvents: 9223372036854775807, registerEventsForFilteredBlocks: false, PeerRoles:[endorsingPeer ,chaincodeQuery ,ledgerQuery ,eventSource ,serviceDiscovery])
+11:56:59.898 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: null, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} setting channel to Channel{id: 1, name: mychannel}, from null
+11:56:59.898 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel mapping peer Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} to mspid Org2MSP
+11:56:59.990 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel doing channel update found new peer mspid: Org1MSP, endpoint: peer1.org1.example.com:8051
+11:56:59.990 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Created Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: null, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP}
+11:56:59.990 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel{id: 1, name: mychannel} adding peer: Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: null, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP}, peerOptions: PeerOptions( newest: true, startEvents: null, stopEvents: 9223372036854775807, registerEventsForFilteredBlocks: false, PeerRoles:[endorsingPeer ,chaincodeQuery ,ledgerQuery ,eventSource ,serviceDiscovery])
+11:56:59.991 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: null, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} setting channel to Channel{id: 1, name: mychannel}, from null
+11:56:59.991 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel mapping peer Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} to mspid Org1MSP
+11:57:00.107 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel doing channel update found new peer mspid: Org2MSP, endpoint: peer1.org2.example.com:10051
+11:57:00.109 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Created Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: null, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP}
+11:57:00.114 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel{id: 1, name: mychannel} adding peer: Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: null, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP}, peerOptions: PeerOptions( newest: true, startEvents: null, stopEvents: 9223372036854775807, registerEventsForFilteredBlocks: false, PeerRoles:[endorsingPeer ,chaincodeQuery ,ledgerQuery ,eventSource ,serviceDiscovery])
+11:57:00.115 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: null, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} setting channel to Channel{id: 1, name: mychannel}, from null
+11:57:00.115 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel mapping peer Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} to mspid Org2MSP
+11:57:00.248 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Eventque started null
+11:57:00.268 [main] DEBUG org.hyperledger.fabric.sdk.Endpoint - Endpoint grpcs://localhost:7051, using CN overrideAuthority: 'peer0.org1.example.com'
+11:57:00.306 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: 582dd71954d58452e1f0680a84464a23e1efb1a55dd345eaadef5cd186d0f7b7, channelId: mychannel, epoch 0, clientTLSCertificate digest: AEC4A179027BD30C8B1E05FB45084D81FD20AF37FEEBDD20A38A15CC42553A58
+11:57:00.393 [grpc-nio-worker-ELG-1-4] DEBUG io.netty.handler.ssl.SslHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] HANDSHAKEN: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+11:57:00.394 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+11:57:00.395 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+11:57:00.396 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND SETTINGS: ack=false settings=[id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051]
+11:57:00.396 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND SETTINGS: ack=true
+11:57:00.398 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: peer0.org1.example.com, :path: /protos.Deliver/Deliver, :method: POST, :scheme: https, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.23.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+11:57:00.399 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND DATA: streamId=3 padding=0 endStream=false length=1089 bytes=000000043c0af1070ada070a8101080510011a0c088ce7e0f30510c0c1c98e0122096d796368616e6e656c2a4035383264643731393534643538343532653166...
+11:57:00.419 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND SETTINGS: ack=true
+11:57:00.419 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=1089
+11:57:00.420 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND PING: ack=false bytes=145258749040133895
+11:57:00.420 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND PING: ack=true bytes=145258749040133895
+11:57:00.420 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc] padding=0 endStream=false
+11:57:00.421 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=3 padding=0 endStream=false length=4933 bytes=000000134012bd260a4608081220bc837785fe1ecece973004628f19c4fe7c3f1d8c1ec07b0d29cb7514f963ff941a2038e79232721d958bb257a4bea1ff0735...
+11:57:00.444 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=0 bytes=
+11:57:00.473 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] INBOUND PING: ack=false bytes=145258749040133895
+11:57:00.473 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND PING: ack=true bytes=145258749040133895
+11:57:00.492 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: b5293cb9276a5b142d22fd754053c35d3f42949fcf92d9a4a65968f79ddeb610, channelId: mychannel, epoch 0, clientTLSCertificate digest: 1119F4CCA023B17A2B2F0995364393E7AEC19FD30ED2083AAF90C6D025BD6851
+11:57:00.871 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: 21d112eb8c054493d04650de5406c9087e94258cb6f08323075b41339c21da3d, channelId: mychannel, epoch 0, clientTLSCertificate digest: 68C765942299BA1E92FD2C4488CDE79465A491B65E2849281D2E4F7B8A5DD381
+11:57:00.897 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: 5288ee1cb7f3312b0880078f237adb3adabb5c4b5a43d61fc07b26808a789507, channelId: mychannel, epoch 0, clientTLSCertificate digest: 9DAF0DC0A9EEAC2569E37FE9521EC6EBA7DA76F65A7FF73EAA3379ADB10DDABC
+11:57:00.917 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: 5cfdce03f8430935062ee56b71b102fc3738ddc498da70f92d2979b78fc53ff7, channelId: mychannel, epoch 0, clientTLSCertificate digest: C941BDB57D474C6E624650A09C4BAC641B1C31AA574593624DD209AA4C16770D
+11:57:01.149 [main] DEBUG org.hyperledger.fabric.sdk.Channel - 0 eventhubs initialized
+11:57:01.149 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel registerTransactionListenerProcessor starting
+11:57:01.151 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel blockListener BLOCK_LISTENER_HANDLEe7a94c89-9820-4d62-b4cf-e788c3e0c98eBLOCK_LISTENER_HANDLE starting
+11:57:01.151 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel registerTransactionListenerProcessor completed
+11:57:01.153 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel registerChaincodeListenerProcessor starting
+11:57:01.154 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel blockListener BLOCK_LISTENER_HANDLEb018e77c-db9b-4e6b-9642-cf5f52c11e13BLOCK_LISTENER_HANDLE starting
+11:57:01.155 [main] INFO org.hyperledger.fabric.sdk.Channel - Channel Channel{id: 1, name: mychannel} eventThread started shutdown: false  thread: null 
+11:57:01.155 [pool-2-thread-5] DEBUG org.hyperledger.fabric.sdk.Channel - not intialized:false
+11:57:01.155 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel initialized
+11:57:01.160 [pool-2-thread-6] DEBUG org.hyperledger.fabric.sdk.Channel - is peer true, is filtered: false
+11:57:01.160 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel blockListener BLOCK_LISTENER_HANDLEc4f59966-4e68-4236-8f3f-685738a4f062BLOCK_LISTENER_HANDLE starting
+11:57:01.162 [pool-2-thread-7] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel got event for transaction 51bb9d9aee9ab6be7cd67faac737af461e797a99034f39a946c14c389ec836d5 
+11:57:01.168 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel sendTransactionProposalToEndorsers chaincode name: mycc
+11:57:01.169 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: ENDORSER_TRANSACTION, version: 1, Txid: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737, channelId: mychannel, epoch 0, clientTLSCertificate digest: 
+11:57:01.170 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProposalBuilder - ChaincodeInvocationSpec type: GOLANG, chaincode name: mycc, chaincode path: , chaincode version:  args("invoke", "a", "b", "1")
+11:57:01.170 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils -  User: gateway Certificate: 2d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b44434341632b6741774942416749515a5131386a72526c485a4b5a726c75794e557936747a414b42676771686b6a4f50515144416a427a4d5173770a435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e5532467549455a790a5957356a61584e6a627a455a4d4263474131554543684d5162334a6e4d53356c654746746347786c4c6d4e76625445634d426f474131554541784d54593245750a62334a6e4d53356c654746746347786c4c6d4e7662544165467730794d44417a4d5451774e7a49334d4442614677307a4d44417a4d5449774e7a49334d4442610a4d477378437a414a42674e5642415954416c56544d524d77455159445651514945777044595778705a6d3979626d6c684d5259774641594456515148457731540a59573467526e4a68626d4e7063324e764d513477444159445651514c457756685a473170626a45664d4230474131554541777757515752746157354162334a6e0a4d53356c654746746347786c4c6d4e766254425a4d424d4742797147534d34394167454743437147534d34394177454841304941424c68744a2b367a744556540a6b484b42594c537a353350657162447473414f6d6859764766774e50625a7a5849662f61796876374b74687a49364633685659316654484b51686937696363690a5a346265356d53366b56796a5454424c4d41344741315564447745422f775145417749486744414d42674e5648524d4241663845416a41414d437347413155640a4977516b4d434b41494356713452516765676948376c517150594731466f43683864502b48433938476b347271716b61694a424c4d416f4743437147534d34390a42414d43413063414d45514349465a7a476f346d66564c535761676642465455695a6c516632394e444866776666596f4b336936747852324169413442726c5a0a4a4a634f4c677237447172473338545331394f43524b7545686a3477336f76333048367a62413d3d0a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a
+11:57:01.171 [main] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - SignatureHeader: nonce: c7d179814058fbbd4772342500130c43b09f0c73460c3a3a, User:gateway, MSPID: Org1MSP, idBytes: 0777a6e53490f53a2e510e4e1facae37bd9ee1efc412883585b1dab050ac89f1
+11:57:01.173 [main] INFO org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel doing discovery with peer: Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:57:01.175 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendDiscoveryRequstAsync Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+11:57:01.176 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND HEADERS: streamId=9 headers=GrpcHttp2OutboundHeaders[:authority: peer0.org1.example.com, :path: /discovery.Discovery/Discover, :method: POST, :scheme: https, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.23.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+11:57:01.176 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND DATA: streamId=9 padding=0 endStream=true length=972 bytes=00000003c70afc060adb060ab6060a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b4443434163...
+11:57:01.181 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=972
+11:57:01.182 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND PING: ack=false bytes=145258749040133895
+11:57:01.182 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND PING: ack=true bytes=145258749040133895
+11:57:01.186 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=9 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc] padding=0 endStream=false
+11:57:01.188 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=9 padding=0 endStream=false length=16384 bytes=0000004fe90aa47b12a17b0a9e280a0a4f7264657265724d5350128f280a0a4f7264657265724d535012c7062d2d2d2d2d424547494e20434552544946494341...
+11:57:01.189 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND DATA: streamId=9 padding=0 endStream=false length=4078 bytes=7a49334d4442610a4d476f78437a414a42674e5642415954416c56544d524d77455159445651514945777044595778705a6d3979626d6c684d52597746415944...
+11:57:01.189 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] INBOUND HEADERS: streamId=9 headers=GrpcHttp2ResponseHeaders[grpc-status: 0, grpc-message: ] padding=0 endStream=true
+11:57:01.190 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: OrdererMSP
+11:57:01.190 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org1MSP
+11:57:01.190 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org1MSP
+11:57:01.190 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org2MSP
+11:57:01.190 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel no tls intermediary ca certs for mspid: Org2MSP
+11:57:01.190 [main] DEBUG org.hyperledger.fabric.sdk.ServiceDiscovery - Channel mychannel service discovery completed: true
+11:57:01.192 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel send proposal to Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP}, txID: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737
+11:57:01.193 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendProposalAsync Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP}
+11:57:01.193 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel send proposal to Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP}, txID: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737
+11:57:01.193 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendProposalAsync Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP}
+11:57:01.202 [main] ERROR org.hyperledger.fabric.sdk.Channel - Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4525)
+    at org.hyperledger.fabric.sdk.Channel.sendTransactionProposalToEndorsers(Channel.java:4213)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.sendTransactionProposal(TransactionImpl.java:121)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.endorseTransaction(TransactionImpl.java:106)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.submit(TransactionImpl.java:92)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:70)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at io.grpc.Status.asRuntimeException(Status.java:533)
+    at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+11:57:01.204 [main] ERROR org.hyperledger.fabric.sdk.Channel - Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4525)
+    at org.hyperledger.fabric.sdk.Channel.sendTransactionProposalToEndorsers(Channel.java:4213)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.sendTransactionProposal(TransactionImpl.java:121)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.endorseTransaction(TransactionImpl.java:106)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.submit(TransactionImpl.java:92)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:70)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at io.grpc.Status.asRuntimeException(Status.java:533)
+    at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+11:57:01.205 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel, chaincode mycc attempts 1 bad endorsements: SDEndorser-Org2MSP-peer0.org2.example.com:9051
+11:57:01.205 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel, chaincode mycc attempts 1 bad endorsements: SDEndorser-Org1MSP-peer0.org1.example.com:7051
+11:57:01.206 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel send proposal to Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP}, txID: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737
+11:57:01.207 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendProposalAsync Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP}
+11:57:01.207 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel send proposal to Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP}, txID: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737
+11:57:01.207 [main] DEBUG org.hyperledger.fabric.sdk.Peer - peer.sendProposalAsync Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP}
+11:57:01.227 [main] ERROR org.hyperledger.fabric.sdk.Channel - Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4525)
+    at org.hyperledger.fabric.sdk.Channel.sendTransactionProposalToEndorsers(Channel.java:4213)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.sendTransactionProposal(TransactionImpl.java:121)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.endorseTransaction(TransactionImpl.java:106)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.submit(TransactionImpl.java:92)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:70)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at io.grpc.Status.asRuntimeException(Status.java:533)
+    at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+11:57:01.229 [main] ERROR org.hyperledger.fabric.sdk.Channel - Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4525)
+    at org.hyperledger.fabric.sdk.Channel.sendTransactionProposalToEndorsers(Channel.java:4213)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.sendTransactionProposal(TransactionImpl.java:121)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.endorseTransaction(TransactionImpl.java:106)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.submit(TransactionImpl.java:92)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:70)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+    at io.grpc.Status.asRuntimeException(Status.java:533)
+    at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+11:57:01.230 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel, chaincode mycc attempts 2 bad endorsements: SDEndorser-Org1MSP-peer1.org1.example.com:8051
+11:57:01.230 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel, chaincode mycc attempts 2 bad endorsements: SDEndorser-Org2MSP-peer1.org2.example.com:10051
+11:57:01.230 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Endorsements not achieved chaincode: mycc, done: true, attempts: 2
+11:57:01.234 [main] WARN org.hyperledger.fabric.gateway.impl.TransactionImpl - validatePeerResponses: invalid response from peer grpcs://peer0.org2.example.com:9051, message Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+11:57:01.234 [main] WARN org.hyperledger.fabric.gateway.impl.TransactionImpl - validatePeerResponses: invalid response from peer grpcs://peer1.org1.example.com:8051, message Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+11:57:01.234 [main] WARN org.hyperledger.fabric.gateway.impl.TransactionImpl - validatePeerResponses: invalid response from peer grpcs://peer0.org1.example.com:7051, message Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+11:57:01.234 [main] WARN org.hyperledger.fabric.gateway.impl.TransactionImpl - validatePeerResponses: invalid response from peer grpcs://peer1.org2.example.com:10051, message Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+11:57:01.234 [main] ERROR org.hyperledger.fabric.gateway.impl.TransactionImpl - No valid proposal responses received. 4 peer error responses: Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}; Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}; Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}; Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+11:57:01.237 [main] DEBUG org.hyperledger.fabric.sdk.Channel - RemovePeerInternal Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} from channel Channel{id: 1, name: mychannel}
+11:57:01.237 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel removing mapping peer Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} to mspid Org1MSP
+11:57:01.237 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} unset Channel{id: 1, name: mychannel}
+11:57:01.237 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} is shutting down.
+11:57:01.238 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} removing endorser client EndorserClient{id: 3, channel: mychannel, name:peer0.org1.example.com:7051, url: grpcs://localhost:7051}, isActive: true
+11:57:01.239 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x5f6c0f28, L:/127.0.0.1:51872 - R:localhost/127.0.0.1:7051] OUTBOUND GO_AWAY: lastStreamId=0 errorCode=0 length=0 bytes=
+11:57:01.247 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} is shutting down PeerEventServiceClient{id: 13, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://localhost:7051}
+11:57:01.247 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 13, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://localhost:7051} is shutting down.
+11:57:01.247 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - DeliverResponse onCompleted PeerEventServiceClient{id: 13, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://localhost:7051} setting done.
+11:57:01.248 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND GO_AWAY: lastStreamId=0 errorCode=0 length=0 bytes=
+11:57:01.370 [pool-2-thread-1] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: ed7958db3ab16a44ccd9d4d7643577bad4bd848b834fcd9b904264f66f39b3ca, channelId: mychannel, epoch 0, clientTLSCertificate digest: 1119F4CCA023B17A2B2F0995364393E7AEC19FD30ED2083AAF90C6D025BD6851
+11:57:01.381 [grpc-default-executor-2] WARN org.hyperledger.fabric.sdk.PeerEventServiceClient - Received error on  PeerEventServiceClient{id: 18, channel: mychannel, peerName: peer0.org2.example.com:9051, url: grpcs://peer0.org2.example.com:9051}, attempts 1. UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+三月 23, 2020 11:57:01 上午 io.grpc.internal.SerializingExecutor run
+严重: Exception while executing runnable io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed@1aaa92dc
+java.lang.NullPointerException
+    at org.hyperledger.fabric.sdk.Channel.getExecutorService(Channel.java:2032)
+    at org.hyperledger.fabric.sdk.Peer.getExecutorService(Peer.java:139)
+    at org.hyperledger.fabric.sdk.Peer.reconnectPeerEventServiceClient(Peer.java:394)
+    at org.hyperledger.fabric.sdk.PeerEventServiceClient$1.onError(PeerEventServiceClient.java:313)
+    at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+
+11:57:01.400 [pool-2-thread-2] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: 2470b1ceba05145e1024a8dd5b78b6f2a9569dda9ca527b436ed4a6fb3587c36, channelId: mychannel, epoch 0, clientTLSCertificate digest: 68C765942299BA1E92FD2C4488CDE79465A491B65E2849281D2E4F7B8A5DD381
+11:57:01.411 [grpc-default-executor-0] WARN org.hyperledger.fabric.sdk.PeerEventServiceClient - Received error on  PeerEventServiceClient{id: 19, channel: mychannel, peerName: peer1.org2.example.com:10051, url: grpcs://peer1.org2.example.com:10051}, attempts 1. UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+三月 23, 2020 11:57:01 上午 io.grpc.internal.SerializingExecutor run
+严重: Exception while executing runnable io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed@f00a91d
+java.lang.NullPointerException
+    at org.hyperledger.fabric.sdk.Channel.getExecutorService(Channel.java:2032)
+    at org.hyperledger.fabric.sdk.Peer.getExecutorService(Peer.java:139)
+    at org.hyperledger.fabric.sdk.Peer.reconnectPeerEventServiceClient(Peer.java:394)
+    at org.hyperledger.fabric.sdk.PeerEventServiceClient$1.onError(PeerEventServiceClient.java:313)
+    at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+
+11:57:01.423 [pool-2-thread-3] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: a11f5e7e254a155f1ad6b5cb9c6183b1e1903dffc6b0c3d5da5c526b01211d2d, channelId: mychannel, epoch 0, clientTLSCertificate digest: 9DAF0DC0A9EEAC2569E37FE9521EC6EBA7DA76F65A7FF73EAA3379ADB10DDABC
+11:57:01.432 [grpc-default-executor-2] WARN org.hyperledger.fabric.sdk.PeerEventServiceClient - Received error on  PeerEventServiceClient{id: 20, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://peer0.org1.example.com:7051}, attempts 1. UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+三月 23, 2020 11:57:01 上午 io.grpc.internal.SerializingExecutor run
+严重: Exception while executing runnable io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed@52b6c6da
+java.lang.NullPointerException
+    at org.hyperledger.fabric.sdk.Channel.getExecutorService(Channel.java:2032)
+    at org.hyperledger.fabric.sdk.Peer.getExecutorService(Peer.java:139)
+    at org.hyperledger.fabric.sdk.Peer.reconnectPeerEventServiceClient(Peer.java:394)
+    at org.hyperledger.fabric.sdk.PeerEventServiceClient$1.onError(PeerEventServiceClient.java:313)
+    at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+
+11:57:01.664 [pool-2-thread-4] DEBUG org.hyperledger.fabric.sdk.transaction.ProtoUtils - ChannelHeader: type: DELIVER_SEEK_INFO, version: 1, Txid: 7622dcdb783878f05368830b8939441f3e6b2542cf8f7613785353e094883a42, channelId: mychannel, epoch 0, clientTLSCertificate digest: C941BDB57D474C6E624650A09C4BAC641B1C31AA574593624DD209AA4C16770D
+11:57:01.675 [grpc-default-executor-3] WARN org.hyperledger.fabric.sdk.PeerEventServiceClient - Received error on  PeerEventServiceClient{id: 21, channel: mychannel, peerName: peer1.org1.example.com:8051, url: grpcs://peer1.org1.example.com:8051}, attempts 1. UNAVAILABLE: Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0]
+三月 23, 2020 11:57:01 上午 io.grpc.internal.SerializingExecutor run
+严重: Exception while executing runnable io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed@3904067
+java.lang.NullPointerException
+    at org.hyperledger.fabric.sdk.Channel.getExecutorService(Channel.java:2032)
+    at org.hyperledger.fabric.sdk.Peer.getExecutorService(Peer.java:139)
+    at org.hyperledger.fabric.sdk.Peer.reconnectPeerEventServiceClient(Peer.java:394)
+    at org.hyperledger.fabric.sdk.PeerEventServiceClient$1.onError(PeerEventServiceClient.java:313)
+    at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+    at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+    at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+    at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+    at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+    at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510)
+    at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692)
+    at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681)
+    at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+    at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:748)
+
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 13, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://localhost:7051} is down.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 2, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP} is shut down.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Channel - RemovePeerInternal Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} from channel Channel{id: 1, name: mychannel}
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel removing mapping peer Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} to mspid Org2MSP
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} unset Channel{id: 1, name: mychannel}
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} is shutting down.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} removing endorser client EndorserClient{id: 8, channel: mychannel, name:peer0.org2.example.com:9051, url: grpcs://peer0.org2.example.com:9051}, isActive: true
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} is shutting down PeerEventServiceClient{id: 14, channel: mychannel, peerName: peer0.org2.example.com:9051, url: grpcs://peer0.org2.example.com:9051}
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 14, channel: mychannel, peerName: peer0.org2.example.com:9051, url: grpcs://peer0.org2.example.com:9051} is shutting down.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - DeliverResponse onCompleted PeerEventServiceClient{id: 14, channel: mychannel, peerName: peer0.org2.example.com:9051, url: grpcs://peer0.org2.example.com:9051} setting done.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 14, channel: mychannel, peerName: peer0.org2.example.com:9051, url: grpcs://peer0.org2.example.com:9051} is down.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} is shut down.
+11:57:04.253 [main] DEBUG org.hyperledger.fabric.sdk.Channel - RemovePeerInternal Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} from channel Channel{id: 1, name: mychannel}
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel removing mapping peer Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} to mspid Org2MSP
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} unset Channel{id: 1, name: mychannel}
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} is shutting down.
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} removing endorser client EndorserClient{id: 12, channel: mychannel, name:peer1.org2.example.com:10051, url: grpcs://peer1.org2.example.com:10051}, isActive: true
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} is shutting down PeerEventServiceClient{id: 15, channel: mychannel, peerName: peer1.org2.example.com:10051, url: grpcs://peer1.org2.example.com:10051}
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 15, channel: mychannel, peerName: peer1.org2.example.com:10051, url: grpcs://peer1.org2.example.com:10051} is shutting down.
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - DeliverResponse onCompleted PeerEventServiceClient{id: 15, channel: mychannel, peerName: peer1.org2.example.com:10051, url: grpcs://peer1.org2.example.com:10051} setting done.
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 15, channel: mychannel, peerName: peer1.org2.example.com:10051, url: grpcs://peer1.org2.example.com:10051} is down.
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} is shut down.
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Channel - RemovePeerInternal Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} from channel Channel{id: 1, name: mychannel}
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel removing mapping peer Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} to mspid Org1MSP
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} unset Channel{id: 1, name: mychannel}
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} is shutting down.
+11:57:04.254 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} removing endorser client EndorserClient{id: 6, channel: mychannel, name:peer0.org1.example.com:7051, url: grpcs://peer0.org1.example.com:7051}, isActive: true
+11:57:04.254 [grpc-nio-worker-ELG-1-4] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xf1206882, L:/127.0.0.1:51873 - R:localhost/127.0.0.1:7051] OUTBOUND RST_STREAM: streamId=3 errorCode=8
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} is shutting down PeerEventServiceClient{id: 16, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://peer0.org1.example.com:7051}
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 16, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://peer0.org1.example.com:7051} is shutting down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - DeliverResponse onCompleted PeerEventServiceClient{id: 16, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://peer0.org1.example.com:7051} setting done.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 16, channel: mychannel, peerName: peer0.org1.example.com:7051, url: grpcs://peer0.org1.example.com:7051} is down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} is shut down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Channel - RemovePeerInternal Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} from channel Channel{id: 1, name: mychannel}
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Channel - Channel mychannel removing mapping peer Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} to mspid Org1MSP
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} unset Channel{id: 1, name: mychannel}
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} is shutting down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} removing endorser client EndorserClient{id: 10, channel: mychannel, name:peer1.org1.example.com:8051, url: grpcs://peer1.org1.example.com:8051}, isActive: true
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} is shutting down PeerEventServiceClient{id: 17, channel: mychannel, peerName: peer1.org1.example.com:8051, url: grpcs://peer1.org1.example.com:8051}
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 17, channel: mychannel, peerName: peer1.org1.example.com:8051, url: grpcs://peer1.org1.example.com:8051} is shutting down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - DeliverResponse onCompleted PeerEventServiceClient{id: 17, channel: mychannel, peerName: peer1.org1.example.com:8051, url: grpcs://peer1.org1.example.com:8051} setting done.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.PeerEventServiceClient - PeerEventServiceClient{id: 17, channel: mychannel, peerName: peer1.org1.example.com:8051, url: grpcs://peer1.org1.example.com:8051} is down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Peer - Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} is shut down.
+11:57:04.255 [main] DEBUG org.hyperledger.fabric.sdk.Orderer - Shutting down Orderer{id: 4, channelName: mychannel, name:orderer.example.com:7050, url: grpcs://orderer.example.com:7050, mspid: OrdererMSP}
+11:57:04.256 [pool-2-thread-5] INFO org.hyperledger.fabric.sdk.Channel - Channel mychannel eventThread shutting down. shutdown: true  thread: pool-2-thread-5 
+org.hyperledger.fabric.gateway.ContractException: No valid proposal responses received. 4 peer error responses: Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 7, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://peer0.org2.example.com:9051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}; Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 9, name: peer1.org1.example.com:8051, channelName: mychannel, url: grpcs://peer1.org1.example.com:8051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}; Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 5, name: peer0.org1.example.com:7051, channelName: mychannel, url: grpcs://peer0.org1.example.com:7051, mspid: Org1MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}; Channel Channel{id: 1, name: mychannel} Sending proposal with transaction: 19272371e80d9ecd58161e4c79f7a805a763cd3758472b0e92fbb9a857039737 to Peer{ id: 11, name: peer1.org2.example.com:10051, channelName: mychannel, url: grpcs://peer1.org2.example.com:10051, mspid: Org2MSP} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=Connection closed while performing protocol negotiation for [HttpClientCodec#0, HttpProxyHandler#0, ProtocolNegotiators$WaitUntilActiveHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=null}
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.validatePeerResponses(TransactionImpl.java:202)
+    at org.hyperledger.fabric.gateway.impl.TransactionImpl.submit(TransactionImpl.java:93)
+    at com.github.smartheye.fabric.tests.GatewayTest2_AsLocalhost2.testDiscoveryIT001(GatewayTest2_AsLocalhost2.java:70)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+    at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+    at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+    at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+    at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+    at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at java.util.ArrayList.forEach(ArrayList.java:1257)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+    at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+    at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+    at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+    at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+    at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+    at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+    at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+    at org.junit.platform.runner.JUnitPlatform.run(JUnitPlatform.java:134)
+    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+after  testcase
